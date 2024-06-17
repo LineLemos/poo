@@ -9,13 +9,15 @@ public class IntroducaoApplication {
 	public static void main(String[] args) {
 		SpringApplication.run(IntroducaoApplication.class, args);
 
-		System.out.println("Hello, world!");
-
-		int numero1 = 1;
-		double numeroReal;
-		char caractere = 'a';
-		String nome = "Arthur";
-		boolean possoCorrer = true;
+		Lista01 lista = new Lista01();
+		lista.ex1();
+		lista.ex2();
+		lista.ex3();
+		lista.ex4();
+		lista.ex5();
+		lista.ex6();
+		lista.ex7();
+		lista.ex8();
 		
 	}
 
