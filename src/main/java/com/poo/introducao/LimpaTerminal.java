@@ -1,7 +1,7 @@
 package com.poo.introducao;
 
 
-        public class LimpaTerminal {
+        class LimpaTerminal {
             static void limpa_windows() {
                 try {
                     if (System.getProperty("os.name").contains("Windows")) {

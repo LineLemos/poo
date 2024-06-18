@@ -18,7 +18,6 @@ public class Lista01 {
         resultado = num1 + num2;
         System.out.println("A soma dos números é: " + resultado);
 
-
     }
 
     public void ex2(){
@@ -100,9 +99,7 @@ public class Lista01 {
         System.out.println("A autonomia do seu veículo é de: " + autonomia + " Km/l.");
         
     }
-    /**
-     * 
-     */
+    
     public void ex7(){
 
         double nota1, nota2, nota3, nota4, media, notaRecuperacao;
