@@ -4,6 +4,9 @@ import java.util.Locale;
 import java.util.Scanner;
 
 public class Lista01 {
+
+    Scanner sc = new Scanner(System.in);
+
     public void ex1(){
         int num1, num2, resultado;
 
@@ -146,6 +149,9 @@ public class Lista01 {
 
         celsius = (farenheit -32)/ 1.8;
 
+// A minha ideia inicial foi fazer um celsius = conversão, sendo conversão um número inteiro.
+// Mas eu não sabia como, então pesquisei como fazia.
+// Mas um jeito mais simples seria só usar string.format(%.0f) (?)
         int conversao = (int) Math.round(celsius);
 
         System.out.print("A temperatura em Celsius é: " + conversao);

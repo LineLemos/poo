@@ -18,4 +18,10 @@ package com.poo.introducao;
                 System.out.println("\n\n\n\n");
             }
         }
+//COLOCAR O ARQUIVO NO GIT
+//git add . (Lembrar do ESPAÇO no ponto)
+// git commit -m "Nome do projeto top" (NÃO tem espaço no -m)
+// git push (Se aparecer "Everything up-to-date" não aconteceu nada)
+// git status (Só pra conferir)
+
 
