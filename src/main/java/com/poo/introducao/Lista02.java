@@ -203,7 +203,6 @@ public class Lista02 {
             System.out.println("Incorreto. Você ainda tem: " + chances + " chances.");
             }
         else {
-            System.out.println("Você não tem mais chances. O jogo acabou.");
             return;
         }
     }
@@ -225,7 +224,6 @@ public class Lista02 {
             System.out.println("Incorreto. Você ainda tem: " + chances + " chances.");
             }
         else {
-            System.out.println("Você não tem mais chances. O jogo acabou.");
             return;
         }
     }
