@@ -43,10 +43,41 @@ public class Lista02 {
 
     public void ex3(){
 
-        String idoso, gestante, deficiente;
+        Scanner sc = new Scanner(System.in);
+        Scanner scint = new Scanner(System.in);
 
-        System.out.println();
+        String gestante, deficiente;
+        int respostaidoso;
+        
 
+        System.out.println("Qual a sua idade? ");
+        respostaidoso = scint.nextInt();
+        if (respostaidoso >= 65){
+        System.out.println("Dirija-se a fila preferencial.");
+        return;
+        }
+        
+        System.out.println("Você está gestante? Responda com S/N: ");
+        gestante = sc.next();
 
+        if (gestante.equalsIgnoreCase("s")){
+        System.out.println("Dirija-se a fila preferencial.");
+        return;
+        }
+        
+        System.out.println("Você é PCD? Responda com S/N: ");
+        deficiente = sc.next();
+
+        if (deficiente.equalsIgnoreCase("s")){
+            System.out.println("Dirija-se a fila preferencial.");
+            return;
+            }
+
+        else{
+        System.out.println("Dirija-se a fila comum.");}
+
+        }
     }
-}
+
+
+

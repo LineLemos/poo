@@ -13,9 +13,9 @@ public class IntroducaoApplication {
 		LimpaTerminal.limpa_windows(); 
 
 		Lista02 lista2 = new Lista02();
-		lista2.ex1();
-		lista2.ex2();
-
+		//lista2.ex1();
+		//lista2.ex2();
+		lista2.ex3();
 		
 		
 		
