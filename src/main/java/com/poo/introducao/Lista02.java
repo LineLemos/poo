@@ -158,7 +158,150 @@ public class Lista02 {
         }
     }
     }
-}
+    public void ex7(){
+
+        Scanner sc = new Scanner(System.in);
+
+        int dividendo, divisor;
+
+        System.out.println("Digite o dividendo: ");
+        dividendo = sc.nextInt();
+
+        System.out.println("Digite o divisor: ");
+        divisor = sc.nextInt();
+
+        if (dividendo % divisor ==  0) {
+            System.out.println("É divisivel. O resultado da divisão é: " + (dividendo/divisor));
+        }else{
+            System.out.println("Não é divisível.");
+        }
+
+    }
+
+    public void ex8(){
+
+        Scanner sc = new Scanner(System.in);
+
+        int chances = 3;
+        String resposta1, resposta2, resposta3, resposta4, resposta5;
+
+
+        System.out.println("Pergunta 1)\nSegundo a música da Xuxa que referencia a teoria das cores, o azul com vermelho dá: ");
+        System.out.println("a)Roxo."); 
+        System.out.println("b)Verde."); 
+        System.out.println("c)Laranja."); 
+        System.out.println("d)Rosa."); 
+        
+        resposta1 = sc.next();
+        
+        if (resposta1.equalsIgnoreCase("a")){
+        System.out.println("Parabéns! Você acertou.");
+        }
+        else {
+            chances --;
+           
+        if (chances > 0){
+            System.out.println("Incorreto. Você ainda tem: " + chances + " chances.");
+            }
+        else {
+            System.out.println("Você não tem mais chances. O jogo acabou.");
+            return;
+        }
+    }
+        System.out.println("Pergunta 2)\nQual a capital da Bahia? ");
+        System.out.println("a)Belo Horizonte."); 
+        System.out.println("b)Natal."); 
+        System.out.println("c)Salvador."); 
+        System.out.println("d)Manaus."); 
+
+        resposta2 = sc.next();
+
+        if (resposta2.equalsIgnoreCase("c")){
+            System.out.println("Parabéns! Você acertou.");
+            }
+        else {
+            chances --;
+
+        if (chances > 0){
+            System.out.println("Incorreto. Você ainda tem: " + chances + " chances.");
+            }
+        else {
+            System.out.println("Você não tem mais chances. O jogo acabou.");
+            return;
+        }
+    }
+    System.out.println("Pergunta 3)\nQuem é o ator principal do filme musical Grease(1978)? ");
+        System.out.println("a)Silvester Stallone."); 
+        System.out.println("b)John Travolta."); 
+        System.out.println("c)Rodrigo Santoro."); 
+        System.out.println("d)Patrick Swayze."); 
+
+        resposta3 = sc.next();
+
+        if (resposta3.equalsIgnoreCase("b")){
+            System.out.println("Parabéns! Você acertou.");
+            }
+        else {
+            chances --;
+
+        if (chances > 0){
+                System.out.println("Incorreto. Você ainda tem: " + chances + " chances.");
+                }
+         else {
+                System.out.println("Você não tem mais chances. O jogo acabou.");
+              return;}
+            
+         }
+        System.out.println("Pergunta 4)\nA palavra TRIÂNGULO tem mais relação com qual dos assuntos a seguir? ");
+        System.out.println("a)Astronomia."); 
+        System.out.println("b)Geometria."); 
+        System.out.println("c)Geologia."); 
+        System.out.println("d)Psicologia."); 
+
+        resposta4 = sc.next();
+
+        if (resposta4.equalsIgnoreCase("b")){
+            System.out.println("Parabéns! Você acertou.");
+            }
+        else {
+            chances --;
+
+        if (chances > 0){
+                System.out.println("Incorreto. Você ainda tem: " + chances + " chances.");
+                }
+         else {
+                System.out.println("Você não tem mais chances. O jogo acabou.");
+              return;}
+         }
+            
+        System.out.println("Pergunta 5)Complete a célebre frase de Beauvoir(1967): Ninguém nasce mulher, torna-se...");
+        System.out.println("a)forte."); 
+        System.out.println("b)resiliente."); 
+        System.out.println("c)mulher."); 
+        System.out.println("d)irredutível."); 
+
+        resposta5 = sc.next();
+
+        if (resposta5.equalsIgnoreCase("c")){
+            System.out.println("Parabéns! Você acertou e ganhou o jogo!");
+            }
+        else {
+            chances --;
+
+        if (chances > 0){
+                System.out.println("Incorreto. Mas parabéns, você ganhou o jogo! Pois ainda tem " + chances + " chances.");
+                }
+         else {
+                System.out.println("Você não tem mais chances. O jogo acabou.");
+              return;}
+            }
+        }
+        }
+    
+
+
+        
+    
 
 
 
