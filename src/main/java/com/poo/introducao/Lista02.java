@@ -175,7 +175,6 @@ public class Lista02 {
         }else{
             System.out.println("Não é divisível.");
         }
-
     }
 
     public void ex8(){
@@ -208,11 +207,11 @@ public class Lista02 {
             return;
         }
     }
-        System.out.println("Pergunta 2)\nQual a capital da Bahia? ");
-        System.out.println("a)Belo Horizonte."); 
-        System.out.println("b)Natal."); 
-        System.out.println("c)Salvador."); 
-        System.out.println("d)Manaus."); 
+        System.out.println("Pergunta 2)\nQual a capital da Austrália? ");
+        System.out.println("a)Sydney."); 
+        System.out.println("b)Melbourne."); 
+        System.out.println("c)Camberra."); 
+        System.out.println("d)Perth."); 
 
         resposta2 = sc.next();
 
@@ -230,7 +229,7 @@ public class Lista02 {
             return;
         }
     }
-    System.out.println("Pergunta 3)\nQuem é o ator principal do filme musical Grease(1978)? ");
+    System.out.println("Pergunta 3)\nQuem é o ator principal do filme musical Grease(1978)? O astro de cinema também atuou em outras grandes produções como Os Embalos de Sábado à Noite(1977) e Pulp Fiction(1994), tendo sido indicado para o Oscar de Melhor Ator por ambos os filmes.");
         System.out.println("a)Silvester Stallone."); 
         System.out.println("b)John Travolta."); 
         System.out.println("c)Rodrigo Santoro."); 
@@ -274,7 +273,7 @@ public class Lista02 {
               return;}
          }
             
-        System.out.println("Pergunta 5)Complete a célebre frase de Beauvoir(1967): Ninguém nasce mulher, torna-se...");
+        System.out.println("Pergunta 5)\nComplete a célebre frase de Beauvoir(1967): Ninguém nasce mulher, torna-se...");
         System.out.println("a)forte."); 
         System.out.println("b)resiliente."); 
         System.out.println("c)mulher."); 
