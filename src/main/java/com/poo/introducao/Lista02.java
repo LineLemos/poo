@@ -77,6 +77,26 @@ public class Lista02 {
         System.out.println("Dirija-se a fila comum.");}
 
         }
+    public void ex4(){
+
+        Scanner sc = new Scanner(System.in);
+
+        int resposta;
+
+        System.out.println("Qual a sua idade? ");
+        resposta = sc.nextInt();
+
+        if (resposta ==16 || resposta ==17){
+            System.out.println("Comparecer ao evento somente acompanhado de responsável. ");
+        }
+        if (resposta >=18){
+        System.out.println("Bem vindo ao evento!");
+        }
+        else{
+        System.out.println("Infelizmente, você não pode comparecer ao evento.");
+        }
+
+    }
     }
 
 
