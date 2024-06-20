@@ -111,10 +111,10 @@ public class Lista02 {
         if (login.equals("Aline") && senha.equals("0403")){
         System.out.println("Bem vindo!");
         }
-        if (login.equals("Aline") && !senha.equals("0403")){
+        else if (login.equals("Aline") && !senha.equals("0403")){
         System.out.println("Sua senha está incorreta.");
         }
-        if (!login.equals("Aline") && senha.equals("0403")){
+        else if (!login.equals("Aline") && senha.equals("0403")){
             System.out.println("Seu login está incorreto.");
         }
         else{
@@ -144,30 +144,24 @@ public class Lista02 {
         
         if (nota1 < nota2) {
         media = (nota2 + recuperacao)/2;
-        if (media >=6){
-        System.out.println("Aprovado. A média foi: " + media);
         }
-        if (media < 6) {
-        System.out.println("Reprovado. A média foi: " + media);
-        }
-        }
-    
-        if (nota2 < nota1) {
+        else {
         media = (nota1 + recuperacao)/2;
-        if (media >=6){
-        System.out.println("Aprovado. A média foi: " + media);
         }
-        if (media < 6){
-        System.out.println("Reprovado. A média foi: " + media);
+        if (recuperacao <= nota1 && recuperacao <= nota2) {
+            media = (nota1 + nota2) / 2;
         }
+        if (media >= 6) {
+            System.out.println("Aprovado. A média foi: " + media);
+        } else {
+            System.out.println("Reprovado. A média foi: " + media);
         }
-        if (recuperacao < nota1 && recuperacao < nota2){
-        media = (nota1 + nota2)/2;
-        System.out.println("Reprovado. A média foi: " + media);
-        }
+    }
+    }
 }
-}
-}
+
+
+
 
 
 
