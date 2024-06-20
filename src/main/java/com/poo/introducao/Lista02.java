@@ -95,9 +95,87 @@ public class Lista02 {
         else{
         System.out.println("Infelizmente, você não pode comparecer ao evento.");
         }
+    }
+    public void ex5(){
 
+        Scanner sc = new Scanner(System.in);
+      
+        String login = "Aline", senha = "0403";
+
+        System.out.print("Login: ");
+        login = sc.next();
+
+        System.out.print("Senha: ");
+        senha = sc.next();
+
+        if (login.equals("Aline") && senha.equals("0403")){
+        System.out.println("Bem vindo!");
+        }
+        if (login.equals("Aline") && !senha.equals("0403")){
+        System.out.println("Sua senha está incorreta.");
+        }
+        if (!login.equals("Aline") && senha.equals("0403")){
+            System.out.println("Seu login está incorreto.");
+        }
+        else{
+        System.out.println("Seu login e senha estão incorretos.");
+        }
     }
-    }
+    public void ex6(){
+
+        Scanner sc = new Scanner(System.in);
+
+        double nota1, nota2, media, recuperacao;
+
+        System.out.print("Insira a nota da 1ª avaliação: ");
+        nota1 = sc.nextDouble();
+
+        System.out.print("Insira a nota da 2ª avaliação: ");
+        nota2 = sc.nextDouble();
+
+        media = (nota1 + nota2)/ 2;
+
+        if (media >=6){
+        System.out.println("Aprovado. A média foi: " + media);
+        }
+        else{
+        System.out.print("Insira a nota da recuperação: ");
+        recuperacao = sc.nextDouble();
+        
+        if (nota1 < nota2) {
+        media = (nota2 + recuperacao)/2;
+        if (media >=6){
+        System.out.println("Aprovado. A média foi: " + media);
+        }
+        if (media < 6) {
+        System.out.println("Reprovado. A média foi: " + media);
+        }
+        }
+    
+        if (nota2 < nota1) {
+        media = (nota1 + recuperacao)/2;
+        if (media >=6){
+        System.out.println("Aprovado. A média foi: " + media);
+        }
+        if (media < 6){
+        System.out.println("Reprovado. A média foi: " + media);
+        }
+        }
+        if (recuperacao < nota1 && recuperacao < nota2){
+        media = (nota1 + nota2)/2;
+        System.out.println("Reprovado. A média foi: " + media);
+        }
+}
+}
+}
+
+
+
+
+
+
+      
+    
 
 
 

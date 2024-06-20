@@ -16,8 +16,9 @@ public class IntroducaoApplication {
 		//lista2.ex1();
 		//lista2.ex2();
 		//lista2.ex3();
-		lista2.ex4();
-		
+		//lista2.ex4();
+		lista2.ex5();
+		lista2.ex6();
 		
 		
 	}
