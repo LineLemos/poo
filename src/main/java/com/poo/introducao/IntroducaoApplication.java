@@ -12,16 +12,12 @@ public class IntroducaoApplication {
 
 		LimpaTerminal.limpa_windows(); 
 
+		Lista01 lista1 = new Lista01();
 		Lista02 lista2 = new Lista02();
-		//lista2.ex1();
-		//lista2.ex2();
-		//lista2.ex3();
-		//lista2.ex4();
-		//lista2.ex5();
-		//lista2.ex6();
-		//lista2.ex7();
-		lista2.ex8();
-		
+		Lista03 lista3 = new Lista03();
+		Lista04 lista4 = new Lista04();
+
+		lista3.ex3();
 		
 	}
 }
