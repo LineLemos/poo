@@ -22,11 +22,28 @@ public class Lista04 {
     public void ex2() {
 
         double[] vendasDia = { 10.50, 2.80, 6.20, 8.00, 5.90, 3.50 };
-        
-
-        
-
+    
+          System.out.println("A maior venda foi: R$" + identificaNumeroMaior(vendasDia));
+          System.out.println("A menor venda foi: R$" + identificaNumeroMenor(vendasDia));
     }
+      double identificaNumeroMaior(double[] lista){
+          double numeroMaior = 0;
+          for(double item : lista) {
+              if(item > numeroMaior) {
+                  numeroMaior = item;
+              }
+          }
+          return numeroMaior;
+      }
+      double identificaNumeroMenor(double[] lista){
+          double numeroMenor = 0;
+          for(double item : lista) {
+              if(item < numeroMenor) {
+                  numeroMenor = item;
+              }
+          }
+          return numeroMenor;
+      }
     
     public void ex3(){
         
@@ -45,6 +62,15 @@ public class Lista04 {
     }
 
     public void ex4(){
+        
+        int[] lista = {3,5,6,7,8,10,22,55,110};
+
+        for(int num : lista) {
+            if(num%2 == 0 ){
+                System.out.print(num + " ");
+            }
+        }
+    }
 
     }
     public void ex5(){
@@ -58,27 +84,32 @@ public class Lista04 {
         mercado.add("leite");
         mercado.add("manteiga");
 
+        while(true){
         System.out.println("-- MENU --");
         System.out.println("1. Ver lista");
         System.out.println("2. Adicionar item");
+        System.out.println("3. Sair");
         System.out.println("Pressione o número da opção desejada.");
         int resposta = sc.nextInt();
 
         if(resposta == 1){
             System.out.println(mercado);
-            return;
-        }if (resposta ==2){
+
+        }else if (resposta ==2){
             System.out.println("Adicione um item: ");
             String item = scs.next();
             mercado.add(item);
             System.out.println("Sua lista de mercado agora é: " + mercado);
-            return;
-        }if (resposta != 2 && resposta !=1){
+
+        }else if (resposta ==3){
+            System.out.println("Saindo...");
+            break;
+
+        }else{
             System.out.println("Digite um número válido");
         }
-        return;
     }
-    
+}
 
     public void ex6(){
 
@@ -92,35 +123,41 @@ public class Lista04 {
         mercado.add("manteiga");
         mercado.add("pão");
         
-
+        while(true){
         System.out.println("-- MENU --");
         System.out.println("1. Ver lista");
         System.out.println("2. Adicionar item");
         System.out.println("3. Remover item");
+        System.out.println("4. Sair");
         System.out.println("Pressione o número da opção desejada.");
         int resposta = sc.nextInt();
 
         if(resposta == 1){
             System.out.println(mercado);
-            return;
-        }if (resposta ==2){
+           
+        }else if (resposta ==2){
             System.out.println("Adicione um item: ");
             String item = scs.next();
             mercado.add(item);
             System.out.println("Sua lista de mercado agora é: " + mercado);
-            return;
-        }if (resposta ==3){
+            
+        }else if (resposta ==3){
             System.out.println(mercado);
             System.out.println("Qual item deseja remover?");
             String remover = scs.next();
             mercado.remove(remover);
             System.out.println("Sua lista agora é:" + mercado);
-        }
-        if (resposta != 2 && resposta !=1 && resposta !=3){
+
+        }else if (resposta ==4){
+            System.out.println("Saindo...");
+            break;
+
+        }else{
             System.out.println("Digite um número válido");
         }
-        return;
+       
     }
+}
     public void ex7(){
 
         HashMap<String, Double > mercado = new HashMap<String, Double>();
@@ -135,9 +172,8 @@ public class Lista04 {
     }
     public void ex8(){
 
-        
+
 
 
     }
 
-}
