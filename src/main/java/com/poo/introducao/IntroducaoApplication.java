@@ -13,7 +13,9 @@ public class IntroducaoApplication {
 		LimpaTerminal.limpa_windows(); 
 
 		
-		Lista04 lista4
+		Lista04 lista4 = new Lista04();
+
+		lista4.ex6();
 		
 	}
 }

@@ -6,15 +6,36 @@ import java.util.TimerTask;
 
 public class Lista03 {
 
-    /* public void ex1() {
+    public void ex01() {
+        int tempo;
+        boolean certo = true;
+        Scanner scanner = new Scanner(System.in);
 
-        Scanner sc = new Scanner(System.in);
-        int num;
+        do {
+            System.out.println("digite um valor entre 1 e 59:");
+            tempo = scanner.nextInt();
 
-        System.out.println("Digite um número entre 1 e 59 segundos para iniciar o cronômetro: ");
+            if (tempo >= 1 && tempo <= 59) {
+                certo = false;
+            } else {
+                System.out.println("Valor invalido");
+            }
 
+        } while (certo);
+
+        for (int i = tempo; i > 0; i--) {
+            try {
+                System.out.println(i);
+                Thread.sleep(1000);
+            } catch (InterruptedException e) {
+
+                e.printStackTrace();
+            }
+
+        }
+        System.out.println("acabou");
     }
- */
+
     public void ex2() {
 
         Scanner sc = new Scanner(System.in);
@@ -44,36 +65,34 @@ public class Lista03 {
 
         for (int i = numero1; i <= numero2; i++) {
             if (i % 2 == 0) {
-                System.out.println (i);
+                System.out.println(i);
             }
         }
     }
-
-    /* public void ex4(){
-
+    void ex4() {
         Scanner sc = new Scanner(System.in);
-
-        System.out.println("Digite um número para ser adivinhado: ");
-        int adivinhado = sc.nextInt();
-
-        do{
-        System.out.println("Tente adivinhar o número: ");
-        int adivinhador = sc.nextInt();
-
-        if (adivinhado == adivinhador){
-
-            System.out.println("Acertou.");
+        int chute, numero = (int)(Math.random() * 101);
         
-        } else {
+        System.out.println("===== Jogo de Adivinhação =====\n" +
+                           "Este programa um número aleatório de 0 a 100 e pede para o usuário adivinhá-lo.\n");
+        System.out.println("Adivinhe um número de 0 a 100!");
 
-            if{}
-        } */
-
-
-
-        }
+        do {
+            System.out.print("Chute: ");
+            chute = sc.nextInt();
+            if (chute == numero) {
+                break;
+            } else if (Math.abs(chute - numero) <= 10) {
+                System.out.println("Está quente!");
+            } else if (chute > numero) {
+                System.out.println("Muito alto!");
+            } else {
+                System.out.println("Muito baixo!");
+            }
+        } while (chute != numero);
+        System.out.println("Parabéns! O número secreto era " + numero + "!");
     }
-
+    
     public void ex5() {
 
         Scanner sc = new Scanner(System.in);
@@ -113,3 +132,38 @@ public class Lista03 {
         sc.close();
     }
 
+    public void ex06() {
+        int andares;
+
+        System.out.println("digite quantos andares: ");
+        andares = scanner.nextInt();
+
+        for (int i = 0; i < andares; i++) {
+            for (int k = andares - i; k > 1; k--) {
+                System.out.print(" ");
+            }
+            for (int j = 0; j <= i * 2; j++) {
+                System.out.print("*");
+            }
+            System.out.println(" ");
+        }
+
+    }
+
+    public void ex07() {
+        int largura, altura;
+
+        System.out.println("digite a altura");
+        altura = scanner.nextInt();
+
+        System.out.println("digite a largura");
+        largura = scanner.nextInt();
+
+        for (int i = 0; i < altura; i++) {
+            for (int j = 0; j < largura; j++) {
+                System.out.print("*");
+            }
+            System.out.println(" ");
+        }
+    }
+}
